@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>SingleRect.qml</file>
+        <file>JsFunc.js</file>
+        <file>RectContainer.qml</file>
+        <file>MyButton.qml</file>
+    </qresource>
+</RCC>
