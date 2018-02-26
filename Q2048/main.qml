@@ -70,6 +70,7 @@ Window {
                 id_vec.children[index].cx = JsFunc.pointAt(showPosVec[index]).x;
                 id_vec.children[index].cy = JsFunc.pointAt(showPosVec[index]).y;
                 id_vec.children[index].value = 2;
+                id_vec.children[index].color = JsFunc.getValueColor(id_vec.children[index].value);
                 mapPlane[showPosVec[index]].rectIndex = index;
             }
             id_container.executeMove();
@@ -135,7 +136,6 @@ Window {
                             id_vec.children[mapPlane[mapIndex].rectIndex].cy = JsFunc.pointAt(mapIndex+1).y;
                             var tmpVar = id_vec.children[mapPlane[mapIndex].rectIndex].value;
                             id_vec.children[mapPlane[mapIndex].rectIndex].value *= 2;
-
                             //id_vec.children[mapPlane[mapIndex+1].rectIndex].visible = false;
                             //id_vec.children[mapPlane[mapIndex+1].rectIndex].value = 0;
                             id_vec.children[mapPlane[mapIndex+1].rectIndex].pos = -1;
@@ -179,7 +179,6 @@ Window {
                             id_vec.children[mapPlane[mapIndex].rectIndex].cy = JsFunc.pointAt(mapIndex-1).y;
                             var tmpVar = id_vec.children[mapPlane[mapIndex].rectIndex].value;
                             id_vec.children[mapPlane[mapIndex].rectIndex].value *= 2;
-
                             //id_vec.children[mapPlane[mapIndex-1].rectIndex].visible = false;
                             //id_vec.children[mapPlane[mapIndex-1].rectIndex].value = 0;
                             id_vec.children[mapPlane[mapIndex-1].rectIndex].pos = -1;
@@ -221,7 +220,6 @@ Window {
                             id_vec.children[mapPlane[mapIndex].rectIndex].cy = JsFunc.pointAt(mapIndex+4).y;
                             var tmpVar = id_vec.children[mapPlane[mapIndex].rectIndex].value;
                             id_vec.children[mapPlane[mapIndex].rectIndex].value *= 2;
-
                             //id_vec.children[mapPlane[mapIndex+4].rectIndex].visible = false;
                             //id_vec.children[mapPlane[mapIndex+4].rectIndex].value = 0;
                             id_vec.children[mapPlane[mapIndex+4].rectIndex].pos = -1;
@@ -266,7 +264,6 @@ Window {
                             id_vec.children[mapPlane[mapIndex].rectIndex].cy = JsFunc.pointAt(mapIndex-4).y;
                             var tmpVar = id_vec.children[mapPlane[mapIndex].rectIndex].value;
                             id_vec.children[mapPlane[mapIndex].rectIndex].value *= 2;
-
                             //id_vec.children[mapPlane[mapIndex-4].rectIndex].visible = false;
                             //id_vec.children[mapPlane[mapIndex-4].rectIndex].value = 0;
                             id_vec.children[mapPlane[mapIndex-4].rectIndex].pos = -1;
@@ -288,6 +285,7 @@ Window {
             for(var rectIndex = 0; rectIndex < 16; ++rectIndex) {
                 if(id_vec.children[rectIndex].pos !== -1) {
                     id_vec.children[rectIndex].text = id_vec.children[rectIndex].value;
+                    id_vec.children[rectIndex].color = JsFunc.getValueColor(id_vec.children[rectIndex].value);
                     id_vec.children[rectIndex].visible = true;
                     id_vec.children[rectIndex].width = 60;
                     id_vec.children[rectIndex].height = 60;
@@ -326,6 +324,7 @@ Window {
                     id_vec.children[i].cx = JsFunc.pointAt(emptyQueue[randNewPos]).x;
                     id_vec.children[i].cy = JsFunc.pointAt(emptyQueue[randNewPos]).y;
                     id_vec.children[i].value = Math.pow(2,1 + Math.round(Math.random()*4));
+                    id_vec.children[i].color = JsFunc.getValueColor(id_vec.children[i].value);
                     //id_vec.children[i].visible = true;
                     break;
                 }
@@ -578,6 +577,7 @@ Window {
                     id_vec.children[i].cx = 0;
                     id_vec.children[i].cy = 0;
                     id_vec.children[i].value = 0;
+                    id_vec.children[i].color = "gray";
                 }
                 id_container.curScore = 0;
                 var showPosVec = JsFunc.gameInit(2);
@@ -589,6 +589,7 @@ Window {
                     id_vec.children[index].cx = JsFunc.pointAt(showPosVec[index]).x;
                     id_vec.children[index].cy = JsFunc.pointAt(showPosVec[index]).y;
                     id_vec.children[index].value = 2;
+                    id_vec.children[index].color = JsFunc.getValueColor(id_vec.children[index].value);
                     id_container.mapPlane[showPosVec[index]].rectIndex = index;
                 }
                 id_container.executeMove();

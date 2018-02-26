@@ -87,3 +87,34 @@ function shouldMoveTo(curPoint,deltaX,deltaY) {
     var newpos = row*4-(4-column)-1;
     return newpos;
 }
+
+/*
+  获取方块数值对应的颜色
+  从2--2048共需要11种颜色
+*/
+function getValueColor(value) {
+    switch(value) {
+    case 2:
+        return Qt.rgba(255/255,211/255,155/255,1.0);
+    case 4:
+        return Qt.rgba(255/255,174/255,185/255,1.0);
+    case 8:
+        return Qt.rgba(255/255,140/255,105/255,1.0);
+    case 16:
+        return Qt.rgba(255/255,99/255,71/255,1.0);
+    case 32:
+        return Qt.rgba(255/255,64/255,64/255,1.0);
+    case 64:
+        return Qt.rgba(255/255,52/255,179/255,1.0);
+    case 128:
+        return Qt.rgba(255/255,32/255,32/255,1.0);
+    case 256:
+        return Qt.rgba(139/255,71/255,93/255,1.0);
+    case 512:
+        return Qt.rgba(139/255,10/255,50/255,1.0);
+    case 1024:
+        return Qt.rgba(139/255,37/255,0/255,1.0);
+    case 2048:
+        return Qt.rgba(139/255,0/255,0/255,1.0);
+    }
+}
