@@ -26,11 +26,16 @@ function moveTo(delta_x,delta_y,step) {
     }
     return point;
 }
-
-function gameInit() {
-    var num = 2; // Math.round(4 + Math.random()*7) // 1 -- 3 num of init rectangle number.
+/*
+  游戏开始时，随机产生几个方块的位置
+*/
+function gameInit(num) {
+    // 初始生成的方块数量
+    //var num = Math.round(4 + Math.random()*7) // 1 -- 3 num of init rectangle number.
     var posRect = [];
+    // 标注随机随机制定的位置是否已经有生成的方块了
     var isHave = 0;
+    // 当前已经生成的方块的数量
     var actualNum = 0;
     for(var i = 0; i < num; ++i) {
         var pos = Math.round(Math.random()*15); // 0 -- 15
@@ -39,7 +44,7 @@ function gameInit() {
                 isHave = 1;
             }
         }
-        if(isHave !== 1) {
+        if(isHave != 1) {
             posRect[i] = pos;
             ++actualNum;
             isHave = 0;

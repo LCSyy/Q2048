@@ -1,5 +1,5 @@
-import QtQuick 2.6
-import QtQuick.Window 2.2
+import QtQuick 2.8
+import QtQuick.Window 2.8
 
 import "JsFunc.js" as JsFunc
 
@@ -61,7 +61,7 @@ Window {
         property int curScore: 0
 
         Component.onCompleted: {
-            var showPosVec = JsFunc.gameInit();
+            var showPosVec = JsFunc.gameInit(2);
             for(var index = 0; index < showPosVec.length; ++index) {
                 console.log(showPosVec[index]);
                 id_vec.children[index].pos = showPosVec[index];
@@ -311,6 +311,11 @@ Window {
                     ++index;
                 }
             }
+            // 即数字已经满了，无法再产生新的数字了，宣告游戏失败
+            if(index===0) {
+                failedDialog.visible = true;
+                return;
+            }
             var randNewPos = Math.round(Math.random()*(index-1));
             for(i = 0; i < 16; ++i) {
                 if(id_vec.children[i].pos === -1) {
@@ -320,7 +325,7 @@ Window {
                     id_vec.children[i].centerY = JsFunc.pointAt(emptyQueue[randNewPos]).y;
                     id_vec.children[i].cx = JsFunc.pointAt(emptyQueue[randNewPos]).x;
                     id_vec.children[i].cy = JsFunc.pointAt(emptyQueue[randNewPos]).y;
-                    id_vec.children[i].value = 2;
+                    id_vec.children[i].value = Math.pow(2,1 + Math.round(Math.random()*4));
                     //id_vec.children[i].visible = true;
                     break;
                 }
@@ -478,11 +483,6 @@ Window {
         }
     }
 
-    MyButton {
-
-    }
-
-
     Item {
         width: id_labelText.contentWidth
         height: id_labelText.contentHeight
@@ -504,7 +504,6 @@ Window {
                 font { family: "arial"; italic: true }
             }
         }
-
     }
 
     Row {
@@ -548,6 +547,52 @@ Window {
                     font { bold: true; family: "arial"}
                     text: "0"
                 }
+            }
+        }
+    }
+
+    Rectangle {
+        id: failedDialog
+        anchors.centerIn: parent
+        width: 300
+        height: 200
+        visible: false
+        color: "#8B757B"
+        radius: 5
+        Text {
+            anchors.centerIn: parent
+            text: "游戏失败！\n点击重玩"
+            color: "#ff3344"
+            font.pointSize: 40
+            font.bold: true
+            font.family: "黑体"
+        }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                for(var i = 0; i < id_container.mapPlane.length;++i) {
+                    id_container.mapPlane[i].rectIndex = -1;
+                    id_vec.children[i].pos = -1;
+                    id_vec.children[i].centerX = JsFunc.pointAt(i).x;
+                    id_vec.children[i].centerY = JsFunc.pointAt(i).y;
+                    id_vec.children[i].cx = 0;
+                    id_vec.children[i].cy = 0;
+                    id_vec.children[i].value = 0;
+                }
+                id_container.curScore = 0;
+                var showPosVec = JsFunc.gameInit(2);
+                for(var index = 0; index < showPosVec.length; ++index) {
+                    console.log(showPosVec[index]);
+                    id_vec.children[index].pos = showPosVec[index];
+                    id_vec.children[index].centerX = JsFunc.pointAt(showPosVec[index]).x;
+                    id_vec.children[index].centerY = JsFunc.pointAt(showPosVec[index]).y;
+                    id_vec.children[index].cx = JsFunc.pointAt(showPosVec[index]).x;
+                    id_vec.children[index].cy = JsFunc.pointAt(showPosVec[index]).y;
+                    id_vec.children[index].value = 2;
+                    id_container.mapPlane[showPosVec[index]].rectIndex = index;
+                }
+                id_container.executeMove();
+                failedDialog.visible = false;
             }
         }
     }
