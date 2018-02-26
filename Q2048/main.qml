@@ -1,6 +1,5 @@
 import QtQuick 2.8
 import QtQuick.Window 2.8
-
 import "JsFunc.js" as JsFunc
 
 Window {
@@ -553,8 +552,8 @@ Window {
     Rectangle {
         id: failedDialog
         anchors.centerIn: parent
-        width: 300
-        height: 200
+        width: 400
+        height: 230
         visible: false
         color: "#8B757B"
         radius: 5

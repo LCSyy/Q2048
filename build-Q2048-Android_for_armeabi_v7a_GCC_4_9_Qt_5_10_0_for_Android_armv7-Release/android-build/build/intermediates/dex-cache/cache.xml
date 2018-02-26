@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="F:\LCS_Files\Qt\Q2048\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\android-build\libs\QtAndroid-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d88f0e8afe286f98c851966660e348afe1c40416">
+        <dex dex="F:\LCS_Files\Qt\Q2048\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\android-build\build\intermediates\pre-dexed\debug\QtAndroid-bundled_92f1d0b43784206dcc8cb8f4546558cb7e5b526e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\LCS_Files\Qt\Q2048\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\android-build\libs\QtAndroidBearer-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="fee23fa4fc738e4bc49d1db4715809b7e58b89e4">
+        <dex dex="F:\LCS_Files\Qt\Q2048\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\android-build\build\intermediates\pre-dexed\debug\QtAndroidBearer-bundled_e1c2248d888e71b3570d0b5ea02f6bf1f520371a.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,188 @@
+[
+    {
+        "outputFile": "F:\\LCS_Files\\Qt\\Q2048\\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\\android-build\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 8,
+                    "endColumn": 12,
+                    "endOffset": 513
+                },
+                "from": {
+                    "file": "F:\\LCS_Files\\Qt\\Q2048\\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\\android-build\\res\\values\\libs.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2646,
+                        "endLine": 55,
+                        "endColumn": 12,
+                        "endOffset": 3106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 518,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 2575
+                },
+                "from": {
+                    "file": "F:\\LCS_Files\\Qt\\Q2048\\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\\android-build\\res\\values\\libs.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 581,
+                        "endLine": 48,
+                        "endColumn": 12,
+                        "endOffset": 2640
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2580,
+                    "endLine": 36,
+                    "endColumn": 12,
+                    "endOffset": 2629
+                },
+                "from": {
+                    "file": "F:\\LCS_Files\\Qt\\Q2048\\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\\android-build\\res\\values\\libs.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 300,
+                        "endLine": 11,
+                        "endColumn": 12,
+                        "endOffset": 351
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2634,
+                    "endLine": 46,
+                    "endColumn": 13,
+                    "endOffset": 2845
+                },
+                "from": {
+                    "file": "F:\\LCS_Files\\Qt\\Q2048\\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\\android-build\\res\\values\\libs.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 5,
+                        "startOffset": 360,
+                        "endLine": 22,
+                        "endColumn": 13,
+                        "endOffset": 573
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 2850,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 2960
+                },
+                "from": {
+                    "file": "F:\\LCS_Files\\Qt\\Q2048\\build-Q2048-Android_for_armeabi_v7a_GCC_4_9_Qt_5_10_0_for_Android_armv7-Release\\android-build\\res\\values\\libs.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 169
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 2965,
+                    "endColumn": 107,
+                    "endOffset": 3068
+                },
+                "from": {
+                    "file": "D:\\Qt_5_9\\5.10.0\\android_armv7\\src\\android\\java\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 324,
+                        "endColumn": 107,
+                        "endOffset": 427
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 3073,
+                    "endColumn": 121,
+                    "endOffset": 3190
+                },
+                "from": {
+                    "file": "D:\\Qt_5_9\\5.10.0\\android_armv7\\src\\android\\java\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 201,
+                        "endColumn": 121,
+                        "endOffset": 318
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 3195,
+                    "endColumn": 111,
+                    "endOffset": 3302
+                },
+                "from": {
+                    "file": "D:\\Qt_5_9\\5.10.0\\android_armv7\\src\\android\\java\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 88,
+                        "endColumn": 111,
+                        "endOffset": 195
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 3307,
+                    "endColumn": 84,
+                    "endOffset": 3387
+                },
+                "from": {
+                    "file": "D:\\Qt_5_9\\5.10.0\\android_armv7\\src\\android\\java\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 433,
+                        "endColumn": 84,
+                        "endOffset": 513
+                    }
+                }
+            }
+        ]
+    }
+]
