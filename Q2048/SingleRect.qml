@@ -5,7 +5,7 @@ Rectangle {
     property alias text:id_SingleTxt.text
     property real centerX: 0
     property real centerY: 0
-    property bool openBehavior: true
+    property bool openBehavior: false
     property real nextX: 0
     property real nextY: 0
     x: (centerX - width/2>0)?(centerX - width/2):0    // the simplest way of property bindings

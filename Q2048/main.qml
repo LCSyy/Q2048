@@ -9,40 +9,41 @@ Window {
     width: 360
     height: 640
     title: qsTr("Hello World")
+    property int maxScore: 0
     ParallelAnimation {
         id: id_parallelAnimation
-        PropertyAnimation { target: idRect0;  running:false; property: "centerX"; to:idRect0.cx;  duration: 500}
-        PropertyAnimation { target: idRect0;  running:false; property: "centerY"; to:idRect0.cy;  duration: 500}
-        PropertyAnimation { target: idRect1;  running:false; property: "centerX"; to:idRect1.cx;  duration: 500}
-        PropertyAnimation { target: idRect1;  running:false; property: "centerY"; to:idRect1.cy;  duration: 500}
-        PropertyAnimation { target: idRect2;  running:false; property: "centerX"; to:idRect2.cx;  duration: 500}
-        PropertyAnimation { target: idRect2;  running:false; property: "centerY"; to:idRect2.cy;  duration: 500}
-        PropertyAnimation { target: idRect3;  running:false; property: "centerX"; to:idRect3.cx;  duration: 500}
-        PropertyAnimation { target: idRect3;  running:false; property: "centerY"; to:idRect3.cy;  duration: 500}
-        PropertyAnimation { target: idRect4;  running:false; property: "centerX"; to:idRect4.cx;  duration: 500}
-        PropertyAnimation { target: idRect4;  running:false; property: "centerY"; to:idRect4.cy;  duration: 500}
-        PropertyAnimation { target: idRect5;  running:false; property: "centerX"; to:idRect5.cx;  duration: 500}
-        PropertyAnimation { target: idRect5;  running:false; property: "centerY"; to:idRect5.cy;  duration: 500}
-        PropertyAnimation { target: idRect6;  running:false; property: "centerX"; to:idRect6.cx;  duration: 500}
-        PropertyAnimation { target: idRect6;  running:false; property: "centerY"; to:idRect6.cy;  duration: 500}
-        PropertyAnimation { target: idRect7;  running:false; property: "centerX"; to:idRect7.cx;  duration: 500}
-        PropertyAnimation { target: idRect7;  running:false; property: "centerY"; to:idRect7.cy;  duration: 500}
-        PropertyAnimation { target: idRect8;  running:false; property: "centerX"; to:idRect8.cx;  duration: 500}
-        PropertyAnimation { target: idRect8;  running:false; property: "centerY"; to:idRect8.cy;  duration: 500}
-        PropertyAnimation { target: idRect9;  running:false; property: "centerX"; to:idRect9.cx;  duration: 500}
-        PropertyAnimation { target: idRect9;  running:false; property: "centerY"; to:idRect9.cy;  duration: 500}
-        PropertyAnimation { target: idRect10; running:false; property: "centerX"; to:idRect10.cx; duration: 500}
-        PropertyAnimation { target: idRect10; running:false; property: "centerY"; to:idRect10.cy; duration: 500}
-        PropertyAnimation { target: idRect11; running:false; property: "centerX"; to:idRect11.cx; duration: 500}
-        PropertyAnimation { target: idRect11; running:false; property: "centerY"; to:idRect11.cy; duration: 500}
-        PropertyAnimation { target: idRect12; running:false; property: "centerX"; to:idRect12.cx; duration: 500}
-        PropertyAnimation { target: idRect12; running:false; property: "centerY"; to:idRect12.cy; duration: 500}
-        PropertyAnimation { target: idRect13; running:false; property: "centerX"; to:idRect13.cx; duration: 500}
-        PropertyAnimation { target: idRect13; running:false; property: "centerY"; to:idRect13.cy; duration: 500}
-        PropertyAnimation { target: idRect14; running:false; property: "centerX"; to:idRect14.cx; duration: 500}
-        PropertyAnimation { target: idRect14; running:false; property: "centerY"; to:idRect14.cy; duration: 500}
-        PropertyAnimation { target: idRect15; running:false; property: "centerX"; to:idRect15.cx; duration: 500}
-        PropertyAnimation { target: idRect15; running:false; property: "centerY"; to:idRect15.cy; duration: 500}
+        PropertyAnimation { target: idRect0;  running:false; property: "centerX"; to:idRect0.cx;  duration: 100}
+        PropertyAnimation { target: idRect0;  running:false; property: "centerY"; to:idRect0.cy;  duration: 100}
+        PropertyAnimation { target: idRect1;  running:false; property: "centerX"; to:idRect1.cx;  duration: 100}
+        PropertyAnimation { target: idRect1;  running:false; property: "centerY"; to:idRect1.cy;  duration: 100}
+        PropertyAnimation { target: idRect2;  running:false; property: "centerX"; to:idRect2.cx;  duration: 100}
+        PropertyAnimation { target: idRect2;  running:false; property: "centerY"; to:idRect2.cy;  duration: 100}
+        PropertyAnimation { target: idRect3;  running:false; property: "centerX"; to:idRect3.cx;  duration: 100}
+        PropertyAnimation { target: idRect3;  running:false; property: "centerY"; to:idRect3.cy;  duration: 100}
+        PropertyAnimation { target: idRect4;  running:false; property: "centerX"; to:idRect4.cx;  duration: 100}
+        PropertyAnimation { target: idRect4;  running:false; property: "centerY"; to:idRect4.cy;  duration: 100}
+        PropertyAnimation { target: idRect5;  running:false; property: "centerX"; to:idRect5.cx;  duration: 100}
+        PropertyAnimation { target: idRect5;  running:false; property: "centerY"; to:idRect5.cy;  duration: 100}
+        PropertyAnimation { target: idRect6;  running:false; property: "centerX"; to:idRect6.cx;  duration: 100}
+        PropertyAnimation { target: idRect6;  running:false; property: "centerY"; to:idRect6.cy;  duration: 100}
+        PropertyAnimation { target: idRect7;  running:false; property: "centerX"; to:idRect7.cx;  duration: 100}
+        PropertyAnimation { target: idRect7;  running:false; property: "centerY"; to:idRect7.cy;  duration: 100}
+        PropertyAnimation { target: idRect8;  running:false; property: "centerX"; to:idRect8.cx;  duration: 100}
+        PropertyAnimation { target: idRect8;  running:false; property: "centerY"; to:idRect8.cy;  duration: 100}
+        PropertyAnimation { target: idRect9;  running:false; property: "centerX"; to:idRect9.cx;  duration: 100}
+        PropertyAnimation { target: idRect9;  running:false; property: "centerY"; to:idRect9.cy;  duration: 100}
+        PropertyAnimation { target: idRect10; running:false; property: "centerX"; to:idRect10.cx; duration: 100}
+        PropertyAnimation { target: idRect10; running:false; property: "centerY"; to:idRect10.cy; duration: 100}
+        PropertyAnimation { target: idRect11; running:false; property: "centerX"; to:idRect11.cx; duration: 100}
+        PropertyAnimation { target: idRect11; running:false; property: "centerY"; to:idRect11.cy; duration: 100}
+        PropertyAnimation { target: idRect12; running:false; property: "centerX"; to:idRect12.cx; duration: 100}
+        PropertyAnimation { target: idRect12; running:false; property: "centerY"; to:idRect12.cy; duration: 100}
+        PropertyAnimation { target: idRect13; running:false; property: "centerX"; to:idRect13.cx; duration: 100}
+        PropertyAnimation { target: idRect13; running:false; property: "centerY"; to:idRect13.cy; duration: 100}
+        PropertyAnimation { target: idRect14; running:false; property: "centerX"; to:idRect14.cx; duration: 100}
+        PropertyAnimation { target: idRect14; running:false; property: "centerY"; to:idRect14.cy; duration: 100}
+        PropertyAnimation { target: idRect15; running:false; property: "centerX"; to:idRect15.cx; duration: 100}
+        PropertyAnimation { target: idRect15; running:false; property: "centerY"; to:idRect15.cy; duration: 100}
         alwaysRunToEnd: true;
         onStopped: {
             id_container.createNewRect();
@@ -147,7 +148,6 @@ Window {
                             mapPlane[mapIndex].rectIndex = -1;
 
                             id_container.curScore += tmpVar;
-
                             break;
                         }
                     }
@@ -231,7 +231,6 @@ Window {
                             mapPlane[mapIndex].rectIndex = -1;
 
                             id_container.curScore += tmpVar;
-
                             break;
                         }
                     }
@@ -297,6 +296,10 @@ Window {
                 }
             }
             id_curScore.text = id_container.curScore;
+            if(id_container.curScore > id_app.maxScore) {
+                id_app.maxScore = id_container.curScore;
+                id_maxScore.text = id_app.maxScore;
+            }
         }
         function createNewRect() {
             var emptyQueue = [];
@@ -322,7 +325,7 @@ Window {
                     id_vec.children[i].centerY = JsFunc.pointAt(emptyQueue[randNewPos]).y;
                     id_vec.children[i].cx = JsFunc.pointAt(emptyQueue[randNewPos]).x;
                     id_vec.children[i].cy = JsFunc.pointAt(emptyQueue[randNewPos]).y;
-                    id_vec.children[i].value = Math.pow(2,1 + Math.round(Math.random()*4));
+                    id_vec.children[i].value = 2; // 新生成的方块值都是2
                     id_vec.children[i].color = JsFunc.getValueColor(id_vec.children[i].value);
                     //id_vec.children[i].visible = true;
                     break;
@@ -541,6 +544,7 @@ Window {
                     text: "BEST"
                 }
                 Text {
+                    id: id_maxScore
                     anchors.horizontalCenter: parent.horizontalCenter
                     font { bold: true; family: "arial"}
                     text: "0"
