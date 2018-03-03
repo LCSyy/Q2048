@@ -30,3 +30,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS +=
+
+RC_ICONS = icon_2048.ico
+
+ANDROID_PACKAGE_SOURCE_DIR = $$PWD/Android
+

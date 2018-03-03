@@ -4,5 +4,7 @@
         <file>SingleRect.qml</file>
         <file>JsFunc.js</file>
         <file>RectContainer.qml</file>
+        <file>icon_2048.ico</file>
+        <file>Android/AndroidManifest.xml</file>
     </qresource>
 </RCC>
